@@ -90,7 +90,7 @@ def main_loop():
                 send_sms_via_email(COREY_PHONE, "vtext.com", message)
                 alert_sent = True
                 pause_api_calls = True  # Pause further API calls until resumed
-                check_email_interval = 10  # Start checking emails every 10 seconds after sending an alert
+                check_email_interval = 30  # Start checking emails every 10 seconds after sending an alert
 
         command = read_emails()
         if command == 'resume':
